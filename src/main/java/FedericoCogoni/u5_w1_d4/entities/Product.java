@@ -16,8 +16,8 @@ import java.util.UUID;
 public abstract class Product {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private UUID id;
     protected String name;
     protected double price;
     protected int calories;
